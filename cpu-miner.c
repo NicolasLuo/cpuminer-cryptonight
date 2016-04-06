@@ -1033,8 +1033,7 @@ static void *miner_thread(void *userdata) {
      * error if it fails */
      #ifdef __linux
     if (!opt_benchmark) {
-        //setpriority(PRIO_PROCESS, 0, 19);
-        if(!geteuid()) setpriority(PRIO_PROCESS, 0, -14);
+        setpriority(PRIO_PROCESS, 0, 19);
         drop_policy();
     }
 	#endif
