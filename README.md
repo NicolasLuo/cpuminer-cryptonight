@@ -22,8 +22,8 @@ Algorithms
 Dependencies
 ============
 
-* libcurl			http://curl.haxx.se/libcurl/
-* jansson			http://www.digip.org/jansson/ (jansson is included in-tree)
+* libcurl	http://curl.haxx.se/libcurl/
+* jansson	http://www.digip.org/jansson/ (jansson is included in-tree)
 
 Download
 ========
@@ -36,7 +36,7 @@ Compiling
 #### Basic \*nix build instructions:
 
     ./autogen.sh
-    CFLAGS="*-march=native*" ./configure
+    CFLAGS="$CFLAGS -march=native" ./configure
     make -j 2
 
 #### Architecture-specific notes:
@@ -46,7 +46,7 @@ Compiling
 
 
         ./autogen.sh
-        CFLAGS="*-march=native*" ./configure --disable-aes-ni
+        CFLAGS="$CFLAGS -march=native" ./configure --disable-aes-ni
         make -j 2
 
 Usage instructions
