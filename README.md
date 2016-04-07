@@ -43,10 +43,11 @@ Compiling
 
  * CryptoNight works only on x86 and x86-64.
  * If you want to mine a cryptonight currency on a processor that does not support the AES-NI instructions, you need to modify the compilation procedure. If your processor doesn't have AES-NI, mining is much slower, progressing at around 1/3rd the speed. This is the compilation procedure for CPUs that lack AES-NI:
- 
-    ./autogen.sh
-    CFLAGS="*-march=native*" ./configure --disable-aes-ni
-    make -j 2
+
+
+        ./autogen.sh
+        CFLAGS="*-march=native*" ./configure --disable-aes-ni
+        make -j 2
 
 Usage instructions
 ==================
