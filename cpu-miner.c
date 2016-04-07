@@ -1140,8 +1140,8 @@ static void *miner_thread(void *userdata) {
         gettimeofday(&tv_start, NULL );
 
         /* scan nonces for a proof-of-work hash */
-            rc = scanhash_cryptonight(thr_id, work.data, work.target,
-                    max_nonce, &hashes_done, persistentctx);
+        rc = scanhash_cryptonight(thr_id, work.data, work.target,
+                max_nonce, &hashes_done, persistentctx);
 
         /* record scanhash elapsed time */
         gettimeofday(&tv_end, NULL );
