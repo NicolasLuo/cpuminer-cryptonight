@@ -17,7 +17,7 @@ Algorithms
 
 #### Currently supported
 
- * ✓ __cryptonight__ (Bytecoin [BCN], Monero)
+ * ✓ __cryptonight__ (Bytecoin [BCN], Monero [XMR])
 
 Dependencies
 ============
